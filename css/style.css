@@ -1,0 +1,385 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+
+:root {
+    --black: #171717;
+    --icewhite: aliceblue; 
+    --blue: rgb(32, 22, 184);
+    --red: rgba(179, 1, 1, 0.75);
+    --white: white;
+}
+
+html {
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--icewhite);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    color: var(--black)
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--black)
+}
+
+#main {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    color: var(--icewhite);
+}
+
+#hairguy {
+    height: 110vh;
+    width: 40rem;
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+    z-index: -1;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 65%, var(--black) 89%), 
+                        linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--black) 80%),
+                        url('/images/hairguy-background.jpg');
+    background-repeat: no-repeat;
+
+    transform: skewy(5deg);
+    /* animation: fadeInAnimation ease-in 2s; */
+}
+
+#main::before {
+    content: '';
+    position: absolute;
+    inset: -3.5rem 0 auto 0;
+    z-index: -1;
+    height: 110vh;
+    transform: skewY(5deg);
+    background-color: var(--black);
+}
+
+
+#control {
+    margin-top: 8rem;
+    margin-left: 13rem;
+    width: 30rem;
+    height: 23rem;
+}
+
+#control h1 {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+#control p {
+    width: 20rem;
+    margin: 2rem 0;
+}
+
+.hairbtn {
+    background: var(--icewhite);
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.hairbtn a {
+    color:  var(--black)
+}
+
+.hairbtn:hover {
+    background-color: cadetblue;
+    padding: 0.7rem;
+    margin-right: 0.6rem;
+}
+
+#hours {
+    position: absolute;
+    display: inline;
+    transform: rotate(90deg);
+    right: -4.5rem;
+    top: 50%;
+    font-size: 1.3rem;
+    
+}
+
+#discount-book {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    inset: auto auto -7rem 2rem;
+    height: 10rem;
+    width: 11rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: var(--red);
+    color: var(--icewhite);
+}
+
+#discount-book:hover {
+    cursor: pointer;
+}
+
+#discount-book span {
+    font-size: 2rem;
+}
+
+
+#services {
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-evenly;
+    height: 27rem;
+    width: 100%;
+}
+
+.styleCard {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+    height: 25rem;
+    width: 20rem;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    padding: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.styleCard::before {
+    content: ' ';
+    position: absolute;
+    inset: auto -1.5rem -1.5rem auto;
+    width: 98%;
+    height: 98%;
+    filter: blur(0.5rem);
+    background-color: var(--icewhite);
+    z-index: -1;
+}
+
+
+
+.styleCard h3 {
+    font-size: 1.7rem;
+    position: absolute;
+    inset: -0.8rem auto auto -0.4rem;
+    padding: 0 0.2rem;
+    background-color: var(--white);
+}
+
+.styleCard img {
+    margin: 1rem;
+    height: 10rem;
+    width: auto;
+}
+
+#empower {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30rem;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: var(--icewhite);
+}
+
+#text-video {
+    width: 30rem;
+    line-height: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#text-video h2{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+#video {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 16/9;
+    height: 15rem;
+    background-color: rgb(161, 161, 167);
+    font-size: 4rem;
+}
+
+#professionals {
+    width: 100%;
+    height: 30rem;
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.professionalCard {
+    position: relative;
+    height: 21rem;
+}
+
+.professionalCard figcaption {
+position: absolute;
+inset: auto auto 0 -0.5rem;
+padding: 1rem;
+background-color: var(--red);
+color: var(--icewhite);
+font-size: 1.5rem;
+}
+
+.proPictures {
+    height: 20rem;
+    width: 15rem;
+}
+
+#coupon {
+    margin: 10rem auto;
+    width: 80%;
+    height: 15rem;
+    background-color: var(--red);
+    text-align: center;
+    color: var(--icewhite);
+    font-size: 4rem;
+    padding: 2rem 5rem;
+    border-radius: 3rem 0;
+}
+
+#inspiration {
+    background-color: var(--icewhite);
+    display: grid;
+}
+
+.griddy {
+    margin: 7rem auto;
+    display: grid;
+    width: 35rem;
+    height: 35rem;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
+    grid-template-areas: "one two three"
+        "four two five"
+        "four six five";
+    grid-gap: 1rem
+}
+
+#imgOne {
+    background-color: grey;
+    background-image: url(/images/beardOil.jpg);
+    background-size: 15rem auto;
+    background-position: -4rem 0;
+    grid-area: one;
+}
+
+#imgTwo {
+    background-color: aquamarine;
+    background-image: url(/images/hairBike.jpg);
+    background-size: 15rem auto;
+    background-position: -3.5rem -1rem;
+    grid-area: two;
+}
+
+#imgThree {
+    background-color: orange;
+    background-image: url(/images/longhair.jpg);
+    background-size: 25rem auto;
+    background-position: -5rem -1rem;
+    grid-area: three;
+}
+
+#imgFour {
+    background-color: blue;
+    background-image: url('/images/sirManuel.jpg');
+    background-size: 14rem auto;
+    background-position:  -1.5rem 0;
+    grid-area: four;
+}
+
+#imgFive {
+    background-color: red;
+    background-image: url('/images/straighRazorShave.jpg');
+    background-size: 15rem auto;
+    background-position: -2rem 0;
+    grid-area: five;
+}
+
+#imgSix {
+    background-color: aquamarine;
+    background-image: url('/images/mustache.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 25rem;
+    background-position: -5rem -4.5rem;
+    grid-area: six;
+}
+
+
+
+.griddy * {
+    border: 1px solid black;
+}
+
+/* animations */
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    };
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        background-image: url('/images/logo.png');
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #hairguy {
+        display: none;
+    }
+
+    #disount-book {
+        position: relative;
+        margin-left: 4rem;
+    }
+
+    #services {
+        flex-direction: column;
+        height: 50rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .styleCard {
+        flex-direction: row;
+        height: 15rem;
+        width: clamp(30rem, 40rem, 45rem);
+    }
+}
+
