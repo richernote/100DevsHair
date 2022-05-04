@@ -61,7 +61,7 @@ nav a {
     z-index: -1;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 65%, var(--black) 89%), 
                         linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--black) 80%),
-                        url('./images/hairguy-background.jpg');
+                        url('../images/hairguy-background.jpg');
     background-repeat: no-repeat;
 
     transform: skewy(5deg);
@@ -288,7 +288,7 @@ font-size: 1.5rem;
 
 #imgOne {
     background-color: grey;
-    background-image: url(images/beardOil.jpg);
+    background-image: url('../images/beardOil.jpg');
     background-size: 15rem auto;
     background-position: -4rem 0;
     grid-area: one;
@@ -296,7 +296,7 @@ font-size: 1.5rem;
 
 #imgTwo {
     background-color: aquamarine;
-    background-image: url(/images/hairBike.jpg);
+    background-image: url(../images/hairBike.jpg);
     background-size: 15rem auto;
     background-position: -3.5rem -1rem;
     grid-area: two;
@@ -304,7 +304,7 @@ font-size: 1.5rem;
 
 #imgThree {
     background-color: orange;
-    background-image: url(/images/longhair.jpg);
+    background-image: url('../images/longhair.jpg');
     background-size: 25rem auto;
     background-position: -5rem -1rem;
     grid-area: three;
@@ -312,7 +312,7 @@ font-size: 1.5rem;
 
 #imgFour {
     background-color: blue;
-    background-image: url('/images/sirManuel.jpg');
+    background-image: url('../images/sirManuel.jpg');
     background-size: 14rem auto;
     background-position:  -1.5rem 0;
     grid-area: four;
@@ -320,7 +320,7 @@ font-size: 1.5rem;
 
 #imgFive {
     background-color: red;
-    background-image: url('/images/straighRazorShave.jpg');
+    background-image: url('../images/straighRazorShave.jpg');
     background-size: 15rem auto;
     background-position: -2rem 0;
     grid-area: five;
@@ -355,7 +355,7 @@ font-size: 1.5rem;
 
 @media screen and (max-width: 1000px) {
     main {
-        background-image: url('/images/logo.png');
+        background-image: url('../images/logo.png');
         background-repeat: no-repeat;
         background-position: right;
     }
