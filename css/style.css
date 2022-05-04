@@ -288,7 +288,7 @@ font-size: 1.5rem;
 
 #imgOne {
     background-color: grey;
-    background-image: url(/images/beardOil.jpg);
+    background-image: url(images/beardOil.jpg);
     background-size: 15rem auto;
     background-position: -4rem 0;
     grid-area: one;
