@@ -328,7 +328,7 @@ font-size: 1.5rem;
 
 #imgSix {
     background-color: aquamarine;
-    background-image: url('/images/mustache.jpg');
+    background-image: url('../images/mustache.jpg');
     background-repeat: no-repeat;
     background-size: auto 25rem;
     background-position: -5rem -4.5rem;
