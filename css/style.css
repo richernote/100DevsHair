@@ -31,7 +31,7 @@ header {
     color: var(--black)
 }
 
-.menu-button {
+#menu-button {
     display: none;
 }
 
@@ -403,9 +403,6 @@ font-size: 1.5rem;
 }
 
 @media screen and (max-width: 750px) {
-    #control {
-        margin-left: 3rem;
-    }
 
     .styleCard {
         width: 90%;
@@ -469,7 +466,7 @@ font-size: 1.5rem;
         left: calc(50vw - 1.25rem)
     }
 
-    .menu-button {
+    #menu-button {
         display: inline-block;
         font-size: 2rem;
     }

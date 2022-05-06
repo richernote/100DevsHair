@@ -1,4 +1,4 @@
-let menu = document.querySelector('.menu-button');
+let menu = document.querySelector('#menu-button');
 let dropdown = document.querySelector('nav');
 
 let disClose = document.querySelector('.dis-close');
