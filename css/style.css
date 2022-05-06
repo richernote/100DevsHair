@@ -160,7 +160,7 @@ i.dis-close {
     margin-top: 12rem;
     display: flex;
     justify-content: space-evenly;
-    height: 27rem;
+    height: auto;
     width: 100%;
 }
 
@@ -175,17 +175,18 @@ i.dis-close {
     background-color: var(--white);
     border: 2px solid var(--black);
     padding: 1.2rem;
+    margin-top: 2.2rem;
     font-size: 1.3rem;
 }
 
 .styleCard::before {
     content: ' ';
     position: absolute;
-    inset: auto -1.5rem -1.5rem auto;
+    inset: auto -1rem -1rem auto;
     width: 98%;
     height: 98%;
     filter: blur(0.5rem);
-    background-color: var(--icewhite);
+    background-color: var(--icewhitegit );
     z-index: -1;
 }
 
@@ -210,7 +211,7 @@ i.dis-close {
     align-items: center;
     height: 30rem;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 7rem;
     background-color: var(--icewhite);
 }
 
