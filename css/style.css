@@ -31,6 +31,10 @@ header {
     color: var(--black)
 }
 
+.menu-button {
+    display: none;
+}
+
 .logo {
     font-size: 2.5rem;
 }
@@ -143,7 +147,12 @@ nav a {
 }
 
 #discount-book span {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+
+i.dis-close {
+    display: none;
+    text-align: left;
 }
 
 
@@ -181,7 +190,6 @@ nav a {
 }
 
 
-
 .styleCard h3 {
     font-size: 1.7rem;
     position: absolute;
@@ -211,6 +219,7 @@ nav a {
     line-height: 1.2rem;
     font-size: 1.5rem;
     font-weight: 400;
+    padding: 1.5rem;
 }
 
 #text-video h2{
@@ -233,6 +242,7 @@ nav a {
     height: 30rem;
     margin: 5rem 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -240,6 +250,7 @@ nav a {
 .professionalCard {
     position: relative;
     height: 21rem;
+    margin: 1rem;
 }
 
 .professionalCard figcaption {
@@ -271,6 +282,8 @@ font-size: 1.5rem;
 #inspiration {
     background-color: var(--icewhite);
     display: grid;
+    width: 100%;
+    justify-content: center;
 }
 
 .griddy {
@@ -278,12 +291,13 @@ font-size: 1.5rem;
     display: grid;
     width: 35rem;
     height: 35rem;
-    grid-template-columns: 10rem 10rem 10rem;
-    grid-template-rows: 10rem 10rem 10rem;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 31% 31% 31%;
     grid-template-areas: "one two three"
         "four two five"
         "four six five";
-    grid-gap: 1rem
+    grid-gap: 0.8rem;
+    place-content   : center;
 }
 
 #imgOne {
@@ -298,7 +312,7 @@ font-size: 1.5rem;
     background-color: aquamarine;
     background-image: url(../images/hairBike.jpg);
     background-size: 15rem auto;
-    background-position: -3.5rem -1rem;
+    background-position: -2rem 0;
     grid-area: two;
 }
 
@@ -360,6 +374,11 @@ font-size: 1.5rem;
         background-position: right;
     }
 
+    #control {
+        margin-top: 30%;
+        margin-left: 10%;
+    }
+
     #hairguy {
         display: none;
     }
@@ -383,3 +402,98 @@ font-size: 1.5rem;
     }
 }
 
+@media screen and (max-width: 750px) {
+    #control {
+        margin-left: 3rem;
+    }
+
+    .styleCard {
+        width: 90%;
+        height: auto;
+    }
+
+    #discount-book {
+        top: 4rem;
+        left: 1rem;
+        width: 85%;
+        text-align: center;
+    }
+
+    #discount-book .dis-close {
+        display: inline-block;
+        text-align: left;
+    }
+
+    #empower {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #text-video {
+        width: 100%;
+    }
+
+    #video {
+        width: 95%;
+    }
+
+    #text-video p {
+        font-size: 1.2rem;
+    }
+
+    #professionals {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #coupon {
+        display: none;
+    }
+
+    #inspiration {
+        width: 100%;
+        text-align: center;
+    }
+
+    .griddy {
+        max-width: 35rem;
+        max-height: 35rem;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+    
+    .logo {
+        position: absolute;
+        left: calc(50vw - 1.25rem)
+    }
+
+    .menu-button {
+        display: inline-block;
+        font-size: 2rem;
+    }
+    
+    nav {
+        display: none;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        height: auto;
+        width: 50%;
+        background-color: var(--icewhite);
+        z-index: 3;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 35rem) {
+    .griddy {
+        height: 95vw;
+        width: 95vw;
+    }
+}
