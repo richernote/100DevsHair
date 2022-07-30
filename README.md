@@ -1,8 +1,14 @@
-# 100Devs Salon Site
+# 100Devs Salon
+"Salon" site for 100Devs. Started as a salon site but it graduated into becoming a site for beards and bald heads.
 
-This is my take on the 100Devs salon site. 
-My initial idea was to stage it as a site that provided products and services to balding men/those who have alopecia and those with beards.
+**Link to project:** 
 
+
+## How It's Made:
+
+**Tech used:** HTML, CSS, JavaScript
+
+Used primarily HTML and CSS. Java script was just to add functionality to the pop up and side menu.
 
 
 ### TODO
