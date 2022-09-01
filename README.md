@@ -2,6 +2,7 @@
 "Salon" site for 100Devs. Started as a salon site but it graduated into becoming a site for beards and bald heads.
 
 **Link to project:** [https://richernote.github.io/100DevsHair/]
+<img src="./images/Capture.PNG" width="500">
 
 
 ## How It's Made:
